@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>列表页</title>
+    <link rel="stylesheet" type="text/css" href="../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../css/list.css" />
+    <script type="text/javascript" src="../js/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+    <script type="text/javascript" src="../js/list.js"></script>
+</head>
+<body>
+    <!-- 回到顶部 -->
+        <div class="new_mbshop">
+            <a href="JavaScript:;" id="toTop"></a>
+            <a href="JavaScript:;"></a>
+        </div>
+
+        <!-- header -->
+        <!-- top_ad -->
+        <div id="top_ad">
+            <div class="con">
+                <a href="JavaScript:;">
+                    <img src="../img/top.jpg" height="80" width="1200" alt="" />
+                </a>
+            </div>
+        </div>
+
+        <!-- top_reg -->
+        <header id="top_reg">
+            <div class="con">
+                <div class="reg_l fl">
+                    欢迎来到邦购网，全场实付满99元包邮
+                </div>
+                <ul class="reg_r fr">
+                    <li id="login_way">
+                        <a href="login.html">
+                            登录
+                        </a>
+                        <ul>
+                            <a href="JavaScript:;">QQ账户登录</a>
+                            <a href="JavaScript:;">支付宝登录</a>
+                            <a href="JavaScript:;">微信账户登录</a>
+                        </ul>
+                        <p></p>
+                    </li>
+                    <li>
+                        <a href="reg.html">
+                            注册
+                        </a>
+                    </li>
+                    <li id="myShop">
+                        <a href="JavaScript:;">
+                            我的邦购
+                        </a>
+                        <ul>
+                            <a href="JavaScript:;">我的订单</a>
+                            <a href="JavaScript:;">我的积分</a>
+                            <a href="JavaScript:;">我的点赞</a>
+                            <a href="JavaScript:;">收货地址</a>
+                        </ul>
+                        <p></p>    
+                    </li>
+                    <li>
+                        <a href="JavaScript:;">
+                            会员中心
+                        </a>
+                    </li>
+                    <li id="app">
+                        <a href="JavaScript:;">
+                            <i></i>
+                            下载APP
+                        </a>
+                        <ul>
+                            <img src="../img/APP.png" height="140" width="140" alt="" />
+                        </ul>
+                        <p></p> 
+                    </li>
+                    <li>
+                        <a href="JavaScript:;">
+                            微博
+                        </a>
+                    </li>
+                    <li id="wx">
+                        <a >
+                            微信
+                        </a>
+                        <img src="../img/APP.png" height="140" width="140" alt="" />
+                    </li>
+                    <!-- 用来处理精灵图超出部分 -->
+                    <p class="cover"></p>
+                </ul>
+            </div>
+        </header>
+
+        <!-- top_logo -->
+        <article id="top_logo">
+            <div class="con">
+                <h1><a href="#">美特斯邦威</a></h1>
+                <div class="logo_l fl">
+                    <a href="../text.html" style="display:inlne-block;"><img src="../img/logo.png" height="73" width="266" alt="" /></a>
+                </div>
+                <div class="logo_c fl">
+                    <input class="fl" type="text" placeholder=" emmm 这次降价有点狠！毛衣、外套直降19元起" />
+                    <input class="fl" type="button" value="搜索"/>
+                    <i></i>
+                    <ul class="fl">
+                        <li><a href="JavaScript:;">
+                            毛衣
+                        </a><span>|</span></li>
+                        <li><a href="JavaScript:;" style="color:#D30A06;">
+                            夹克
+                        </a><span>|</span></li>
+                        <li><a href="JavaScript:;">
+                            休闲裤
+                        </a><span>|</span></li>
+                        <li><a href="JavaScript:;">
+                            卫衣
+                        </a><span>|</span></li>
+                        <li><a href="JavaScript:;" style="color:#D30A06;">
+                            羽绒服
+                        </a></li>
+                    </ul>
+                </div>
+                <div class="logo_r fr">
+                    <a href="shop.html">购物袋<b>0</b>件</a>
+                </div>
+            </div>
+        </article>
+
+        <!-- top_nav -->
+        <nav id="top_nav">
+            <div class="con">
+                <div class="nav_l fl">
+                    <ul>
+                        <li>
+                            <a href="JavaScript:;">首页</a>
+                        </li>
+                        <li>
+                            <a href="JavaScript:;">热销分类</a>
+                            <div class="classify clearfix">
+                                <div class="clsify_umn">
+                                    <dt><a href="JavaScript:;">男生热门</a></dt>
+                                    <a href="JavaScript:;">短袖T恤</a>
+                                    <a href="JavaScript:;">短袖衬衫</a>
+                                    <a href="JavaScript:;">POLO</a>
+                                    <a href="JavaScript:;">长袖衬衫</a>
+                                    <a href="JavaScript:;">牛仔裤</a>
+                                    <a href="JavaScript:;">休闲长裤</a>
+                                </div>
+                                <div class="clsify_umn">
+                                    <dt><a href="JavaScript:;">女生热门</a></dt>
+                                    <a href="JavaScript:;">短袖T恤</a>
+                                    <a href="JavaScript:;">连衣裙</a>
+                                    <a href="JavaScript:;">半身裙</a>
+                                    <a href="JavaScript:;">休闲中短裤</a>
+                                    <a href="JavaScript:;">牛仔中短裤</a>
+                                    <a href="JavaScript:;">内衣</a>
+                                </div>
+                                <div class="clsify_umn" style="border-right:none;">
+                                    <dt><a href="JavaScript:;">儿童热门</a></dt>
+                                    <a href="JavaScript:;">短袖T恤</a>
+                                    <a href="JavaScript:;">套装</a>
+                                    <a href="JavaScript:;">裙装</a>
+                                    <a href="JavaScript:;">衬衫</a>
+                                    <a href="JavaScript:;">中短裤</a>
+                                    <a href="JavaScript:;">长裤</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="JavaScript:;">男装</a>
+                            <div class="classify clearfix">
+                                <div class="clsify_umn">
+                                    <dt><a href="JavaScript:;">男生热门</a></dt>
+                                    <a href="JavaScript:;">短袖T恤</a>
+                                    <a href="JavaScript:;">短袖衬衫</a>
+                                    <a href="JavaScript:;">POLO</a>
+                                    <a href="JavaScript:;">长袖衬衫</a>
+                                    <a href="JavaScript:;">牛仔裤</a>
+                                    <a href="JavaScript:;">休闲长裤</a>
+                                </div>
+                                <div class="clsify_umn">
+                                    <dt><a href="JavaScript:;">女生热门</a></dt>
+                                    <a href="JavaScript:;">短袖T恤</a>
+                                    <a href="JavaScript:;">连衣裙</a>
+                                    <a href="JavaScript:;">半身裙</a>
+                                    <a href="JavaScript:;">休闲中短裤</a>
+                                    <a href="JavaScript:;">牛仔中短裤</a>
+                                    <a href="JavaScript:;">内衣</a>
+                                </div>
+                                <div class="clsify_umn" style="border-right:none;">
+                                    <dt><a href="JavaScript:;">儿童热门</a></dt>
+                                    <a href="JavaScript:;">短袖T恤</a>
+                                    <a href="JavaScript:;">套装</a>
+                                    <a href="JavaScript:;">裙装</a>
+                                    <a href="JavaScript:;">衬衫</a>
+                                    <a href="JavaScript:;">中短裤</a>
+                                    <a href="JavaScript:;">长裤</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="JavaScript:;">女装</a>
+                            <div class="classify clearfix"  style="width:440px;">
+                                <div class="clsify_umn">
+                                    <dt><a href="JavaScript:;">男生热门</a></dt>
+                                    <a href="JavaScript:;">短袖T恤</a>
+                                    <a href="JavaScript:;">短袖衬衫</a>
+                                    <a href="JavaScript:;">POLO</a>
+                                    <a href="JavaScript:;">长袖衬衫</a>
+                                    <a href="JavaScript:;">牛仔裤</a>
+                                    <a href="JavaScript:;">休闲长裤</a>
+                                </div>
+                                <div class="clsify_umn">
+                                    <dt><a href="JavaScript:;">女生热门</a></dt>
+                                    <a href="JavaScript:;">短袖T恤</a>
+                                    <a href="JavaScript:;">连衣裙</a>
+                                    <a href="JavaScript:;">半身裙</a>
+                                    <a href="JavaScript:;">休闲中短裤</a>
+                                    <a href="JavaScript:;">牛仔中短裤</a>
+                                    <a href="JavaScript:;">内衣</a>
+                                </div>
+                                <div class="clsify_umn" style="border-right:none;">
+                                    <dt><a href="JavaScript:;">儿童热门</a></dt>
+                                    <a href="JavaScript:;">短袖T恤</a>
+                                    <a href="JavaScript:;">套装</a>
+                                    <a href="JavaScript:;">裙装</a>
+                                    <a href="JavaScript:;">衬衫</a>
+                                    <a href="JavaScript:;">中短裤</a>
+                                    <a href="JavaScript:;">长裤</a>
+                                </div>
+                                <div class="clsify_umn" style="border-right:none;">
+                                    <dt><a href="JavaScript:;">儿童热门</a></dt>
+                                    <a href="JavaScript:;">短袖T恤</a>
+                                    <a href="JavaScript:;">套装</a>
+                                    <a href="JavaScript:;">裙装</a>
+                                    <a href="JavaScript:;">衬衫</a>
+                                    <a href="JavaScript:;">中短裤</a>
+                                    <a href="JavaScript:;">长裤</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="JavaScript:;">儿童</a>
+                            <div class="classify clearfix"  style="width:440px;">
+                                <div class="clsify_umn">
+                                    <dt><a href="JavaScript:;">男生热门</a></dt>
+                                    <a href="JavaScript:;">短袖T恤</a>
+                                    <a href="JavaScript:;">短袖衬衫</a>
+                                    <a href="JavaScript:;">POLO</a>
+                                    <a href="JavaScript:;">长袖衬衫</a>
+                                    <a href="JavaScript:;">牛仔裤</a>
+                                    <a href="JavaScript:;">休闲长裤</a>
+                                </div>
+                                <div class="clsify_umn">
+                                    <dt><a href="JavaScript:;">女生热门</a></dt>
+                                    <a href="JavaScript:;">短袖T恤</a>
+                                    <a href="JavaScript:;">连衣裙</a>
+                                    <a href="JavaScript:;">半身裙</a>
+                                    <a href="JavaScript:;">休闲中短裤</a>
+                                    <a href="JavaScript:;">牛仔中短裤</a>
+                                    <a href="JavaScript:;">内衣</a>
+                                </div>
+                                <div class="clsify_umn" style="border-right:none;">
+                                    <dt><a href="JavaScript:;">儿童热门</a></dt>
+                                    <a href="JavaScript:;">短袖T恤</a>
+                                    <a href="JavaScript:;">套装</a>
+                                    <a href="JavaScript:;">裙装</a>
+                                    <a href="JavaScript:;">衬衫</a>
+                                    <a href="JavaScript:;">中短裤</a>
+                                    <a href="JavaScript:;">长裤</a>
+                                </div>
+                                <div class="clsify_umn" style="border-right:none;">
+                                    <dt><a href="JavaScript:;">儿童热门</a></dt>
+                                    <a href="JavaScript:;">短袖T恤</a>
+                                    <a href="JavaScript:;">套装</a>
+                                    <a href="JavaScript:;">裙装</a>
+                                    <a href="JavaScript:;">衬衫</a>
+                                    <a href="JavaScript:;">中短裤</a>
+                                    <a href="JavaScript:;">长裤</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="JavaScript:;">鞋履</a>
+                            <div class="classify clearfix"  style="width:220px;">
+                                <div class="clsify_umn">
+                                    <dt><a href="JavaScript:;">男生热门</a></dt>
+                                    <a href="JavaScript:;">短袖T恤</a>
+                                    <a href="JavaScript:;">短袖衬衫</a>
+                                    <a href="JavaScript:;">POLO</a>
+                                    <a href="JavaScript:;">长袖衬衫</a>
+                                    <a href="JavaScript:;">牛仔裤</a>
+                                    <a href="JavaScript:;">休闲长裤</a>
+                                </div>
+                                <div class="clsify_umn">
+                                    <dt><a href="JavaScript:;">女生热门</a></dt>
+                                    <a href="JavaScript:;">短袖T恤</a>
+                                    <a href="JavaScript:;">连衣裙</a>
+                                    <a href="JavaScript:;">半身裙</a>
+                                    <a href="JavaScript:;">休闲中短裤</a>
+                                    <a href="JavaScript:;">牛仔中短裤</a>
+                                    <a href="JavaScript:;">内衣</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="JavaScript:;">箱包</a>
+                            <div class="classify clearfix"  style="width:220px;">
+                                <div class="clsify_umn">
+                                    <dt><a href="JavaScript:;">男生热门</a></dt>
+                                    <a href="JavaScript:;">短袖T恤</a>
+                                    <a href="JavaScript:;">短袖衬衫</a>
+                                    <a href="JavaScript:;">POLO</a>
+                                    <a href="JavaScript:;">长袖衬衫</a>
+                                    <a href="JavaScript:;">牛仔裤</a>
+                                    <a href="JavaScript:;">休闲长裤</a>
+                                </div>
+                                <div class="clsify_umn">
+                                    <dt><a href="JavaScript:;">女生热门</a></dt>
+                                    <a href="JavaScript:;">短袖T恤</a>
+                                    <a href="JavaScript:;">连衣裙</a>
+                                    <a href="JavaScript:;">半身裙</a>
+                                    <a href="JavaScript:;">休闲中短裤</a>
+                                    <a href="JavaScript:;">牛仔中短裤</a>
+                                    <a href="JavaScript:;">内衣</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="JavaScript:;">配饰</a>
+                            <div class="classify clearfix"  style="width:220px;">
+                                <div class="clsify_umn">
+                                    <dt><a href="JavaScript:;">男生热门</a></dt>
+                                    <a href="JavaScript:;">短袖T恤</a>
+                                    <a href="JavaScript:;">短袖衬衫</a>
+                                    <a href="JavaScript:;">POLO</a>
+                                    <a href="JavaScript:;">长袖衬衫</a>
+                                    <a href="JavaScript:;">牛仔裤</a>
+                                    <a href="JavaScript:;">休闲长裤</a>
+                                </div>
+                                <div class="clsify_umn">
+                                    <dt><a href="JavaScript:;">女生热门</a></dt>
+                                    <a href="JavaScript:;">短袖T恤</a>
+                                    <a href="JavaScript:;">连衣裙</a>
+                                    <a href="JavaScript:;">半身裙</a>
+                                    <a href="JavaScript:;">休闲中短裤</a>
+                                    <a href="JavaScript:;">牛仔中短裤</a>
+                                    <a href="JavaScript:;">内衣</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav_c fl">
+                    <a href="JavaScript:;"><img src="../img/nav1.png" alt="" /></a>
+                    <a href="JavaScript:;"><img src="../img/nav2.jpg" alt="" /></a>
+                    <a href="JavaScript:;"><img src="../img/nav3.png" alt="" /></a>
+                </div>
+                <div class="nav_r fr">
+                    <a href="JavaScript:;"><img src="../img/mobilegai.gif" alt="" /></a>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- listBreadNav面包导航 -->
+        <div id="listBreadNav">
+            <div class="con clearfix">
+                <div class="listBreadNav">
+                    <a href="#" alt="邦购网首页">邦购网首页</a>
+                    >
+                    <a href="#" alt="所有分类">所有分类</a>
+                </div>
+                <div class="secSearch">
+                    <input type="text" /><input type="button" />
+                </div>
+            </div>
+        </div>
+        
+        <!-- main -->
+        <main class="container">
+            <div class="con clearfix">
+                <div class="search_lt">
+                    <h3>分类</h3>
+                    <ul>
+                        <li>
+                            <em></em>
+                            <a href="javascript:;">男装</a>
+                            <dl> 
+                                <dt>
+                                    <em></em>
+                                    <a href="javascript:;">T恤</a>
+                                </dt>
+                                <dd><a href="javascript:;">POLO</a></dd>
+                                <dd><a href="javascript:;">长袖T恤</a></dd>
+                                <dd><a href="javascript:;">短袖T恤</a></dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <em></em>
+                            <a href="javascript:;">女装</a>
+                            <dl> 
+                                <dt>
+                                    <em></em>
+                                    <a href="javascript:;">T恤</a>
+                                </dt>
+                                <dd><a href="javascript:;">POLO</a></dd>
+                                <dd><a href="javascript:;">长袖T恤</a></dd>
+                                <dd><a href="javascript:;">短袖T恤</a></dd>
+                            </dl>
+                            <dl>
+                                <dt>
+                                    <em></em>
+                                    <a href="javascript:;">衬衫</a>
+                                </dt>
+                                <dd><a href="javascript:;">长袖衬衫</a></dd>
+                                <dd><a href="javascript:;">短袖衬衫</a></dd>
+                                <dd><a href="javascript:;">长袖衬衫</a></dd>
+                                <dd><a href="javascript:;">短袖</a></dd>
+                                <dd><a href="javascript:;">长袖</a></dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <em></em>
+                            <a href="javascript:;">童装</a>
+                            <dl> 
+                                <dt>
+                                    <em></em>
+                                    <a href="javascript:;">T恤</a>
+                                </dt>
+                                <dd><a href="javascript:;">POLO</a></dd>
+                                <dd><a href="javascript:;">长袖T恤</a></dd>
+                                <dd><a href="javascript:;">短袖T恤</a></dd>
+                            </dl>
+                            <dl>
+                                <dt>
+                                    <em></em>
+                                    <a href="javascript:;">衬衫</a>
+                                </dt>
+                                <dd><a href="javascript:;">长袖衬衫</a></dd>
+                                <dd><a href="javascript:;">短袖衬衫</a></dd>
+                            </dl>
+                            <dl>
+                                <dt>
+                                    <em></em>
+                                    <a href="javascript:;">裤装</a>
+                                </dt>
+                                <dd><a href="javascript:;">牛仔长裤</a></dd>
+                                <dd><a href="javascript:;">牛仔中短裤</a></dd>
+                                <dd><a href="javascript:;">西裤</a></dd>
+                                <dd><a href="javascript:;">休闲长裤</a></dd>
+                                <dd><a href="javascript:;">休闲中短裤</a></dd>
+                                <dd><a href="javascript:;">针织长裤</a></dd>
+                            </dl>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <div class="search_rt">
+                    <div class="bd">
+                        <div class="searchItem" style="overflow: hidden;">
+                            <h5>品牌</h5>
+                            <div class="searchItemContent brand" style="height:auto;">
+                                <a href="javascript:;">米浪骑士</a>
+                                <a href="javascript:;">米浪骑士</a>
+                                <a href="javascript:;">米浪骑士</a>
+                                <a href="javascript:;">米浪骑士</a>
+                                <a href="javascript:;">米浪骑士</a>
+                                <a href="javascript:;">米浪骑士</a>
+                                <a href="javascript:;">米浪骑士</a>
+                                <a href="javascript:;">米浪骑士</a>
+                                <a href="javascript:;">米浪骑士</a>
+                                <a href="javascript:;">米浪骑士</a>
+                                <a href="javascript:;">米浪骑士</a>
+                                <a href="javascript:;">米浪骑士</a>
+                                <a href="javascript:;">米浪骑士</a>
+                                <a href="javascript:;">米浪骑士</a>
+                                <a href="javascript:;">米浪骑士</a>
+                                <a href="javascript:;">米浪骑士</a>
+                            </div>
+                            <div class="searchMore">
+                                <a href="javascript:;">更多</a>
+                            </div>
+                        </div>
+                        <div class="searchItem">
+                            <h5>价格</h5>
+                            <div class="searchItemContent" id="s1">
+                                <a href="javascript:;">0-69</a>
+                                <a href="javascript:;">70-139</a>
+                                <a href="javascript:;">140-199</a>
+                                <a href="javascript:;">200-399</a>
+                                <a href="javascript:;">400-10399</a>
+                            </div>
+                            <div class="searchPrice">
+                                <input type="text" <style="text-align: center;">
+                                -
+                                <input type="text" />
+                                <input type="button" value="确认" id="btnPrice"/>
+                            </div>
+                        </div>
+                        <div class="searchItem">
+                            <h5>性别</h5>
+                            <div class="searchItemContent">
+                                <a href="javascript:;">男</a>
+                                <a href="javascript:;">女</a>
+                                <a href="javascript:;">其他</a>
+                            </div>
+                        </div>
+                        <div class="searchItem">
+                            <h5>季节</h5>
+                            <div class="searchItemContent">
+                                <a href="javascript:;">秋</a>
+                                <a href="javascript:;">冬</a>
+                                <a href="javascript:;">夏</a>
+                                <a href="javascript:;">春</a>
+                                <a href="javascript:;">常年款</a>
+                            </div> 
+                        </div>
+                        <div class="seach_Box clearfix">
+                            <h5 class="fl">高级筛选</h5>
+                            <div class="occasion fl">
+                                <span>场合</span>
+                                <em></em>
+                                <div class="option">
+                                    <a href="javascript:;">休闲</a>
+                                    <a href="javascript:;">休闲</a>
+                                    <a href="javascript:;">休闲</a>
+                                    <a href="javascript:;">休闲</a>
+                                    <a href="javascript:;">休闲</a>
+                                    <a href="javascript:;">休闲</a>
+                                    <a href="javascript:;">休闲</a>
+                                    <a href="javascript:;">休闲</a>
+                                    <a href="javascript:;">休闲</a>
+                                    <a href="javascript:;">休闲</a>
+                                    <a href="javascript:;">休闲</a>
+                                    <a href="javascript:;">休闲</a>
+                                    <a href="javascript:;">休闲</a>
+                                    <a href="javascript:;">休闲</a>
+                                    <a href="javascript:;">休闲</a>
+                                    <a href="javascript:;">休闲</a>
+                                    <a href="javascript:;">休闲</a>
+                                    <a href="javascript:;">休闲</a>
+                                    <a href="javascript:;">休闲</a>
+                                    <a href="javascript:;">休闲</a>
+                                    <a href="javascript:;">休闲</a>
+                                    <a href="javascript:;">休闲</a>
+                                    <a href="javascript:;">休闲</a>
+                                    <a href="javascript:;">休闲</a>
+                                    <a href="javascript:;">休闲</a>
+                                    <a href="javascript:;">休闲</a>
+                                    <a id="a1" href="javascript:;">全部场合</a>
+                                </div>
+                            </div>
+                            <div class="series fl">
+                                <span>系列</span>
+                                <em></em>
+                                <div class="option">
+                                    <a href="javascript:;">休闲</a>
+                                    <a href="javascript:;">其他</a>
+                                    <a href="javascript:;">潮流</a>
+                                    <a href="javascript:;">都市</a>
+                                    <a href="javascript:;">基本</a>
+                                    <a href="javascript:;">MTEE</a>
+                                    <a href="javascript:;">商务</a>
+                                    <a id="a1" href="javascript:;">全部系列</a>
+                                </div>
+                            </div>
+                            <div class="colors fl">
+                                <span>颜色</span>
+                                <em></em>
+                                <div class="option">
+                                    <a href="javascript:;"><b></b>休闲</a>
+                                    <a href="javascript:;"><b></b>其他</a>
+                                    <a href="javascript:;"><b></b>潮流</a>
+                                    <a href="javascript:;"><b></b>都市</a>
+                                    <a href="javascript:;"><b></b>基本</a>
+                                    <a href="javascript:;"><b></b>MTEE</a>
+                                    <a href="javascript:;"><b></b>商务</a>
+                                    <a id="a1" href="javascript:;">全部颜色</a>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="searchAlert">
+                        <p>为您找到<i>35444</i>个商品</p>
+                    </div>
+                    <div class="pdFilter">
+                        <div class="pdFilter_l fl">
+                            <a href="javascript:;" class="">默认</a><a href="javascript:;" class="up">新品</a><a href="javascript:;" class="up">销量</a><a href="javascript:;">折扣</a><a href="javascript:;">价格</a>
+                        </div>
+                        <div class="pdFilter_r fr">
+                            <span><i>1</i>/<b>887</b>页</span>
+                            <span><i>35444</i>个商品</span>
+                            <a href="javascript:;">下一页</a>
+                            <input type="radio" name="sty" checked />款式
+                            <input type="radio" name="sty"/>色系
+                            <input type="checkbox" />仅显示有货
+                        </div>
+                    </div>
+                    <div class="pdList">
+                        <ul class="clearfix goodlist">
+                            <!-- <li>
+                                <div class="goods_img_box">
+                                    <a href="javascript:;">
+                                        <img src="../img/list_1.jpg" />
+                                    </a>
+                                </div>
+                                <div class="brand_name">
+                                    <a href="javascript:;">倪芬儿</a>
+                                    <span><i>1.7</i>折</span>
+                                </div>
+                                <div class="good_name">
+                                    <a href="javascript:;">2018秋冬男款套头毛衣</a>
+                                </div>
+                                <div class="good_price">
+                                    <b>￥99</b>
+                                    <i><del>￥599</del></i>
+                                </div>
+                                <div class="good_litimg">
+                                    <a href="javascript:;"><img src="../img/list_11.jpg" alt="" /></a>
+                                    <a href="javascript:;"><img src="../img/list_12.jpg" alt="" /></a>
+                                </div>
+                            </li> -->
+
+                        </ul>
+                        <div class="cont_buttom">
+                            <p class="home">首页</p>
+                            <p class="s1">上一页</p>
+                            <!-- <span class="active">1</span> -->
+                            <!-- <span>2</span> -->
+                            <p class="next">下一页</p>
+                            <p class="end">尾页</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+
+            </div>
+        </main>
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- ad -->
+        <article class="ad">
+            <div class="con">
+                <ul class="ad_contact">
+                    <li><a href="JavaScript:;"><img src="../img/ad1.png" alt="" /></a></li>
+                    <li><a href="JavaScript:;"><img src="../img/ad2.png" alt="" /></a></li>
+                    <li><a href="JavaScript:;"><img src="../img/ad3.png" alt="" /></a></li>
+                </ul>
+                <div class="ad_cpt">
+                    <a href="JavaScript:;"><img src="../img/ad4.jpg" alt="" /></a>
+                    <ul>
+                        <li>
+                            <a href="JavaScript:;">
+                                <img src="../img/ad5.png" alt="" />
+                            </a>
+                            <p>在线客服</p>
+                        </li>
+                        <li>
+                            <a href="JavaScript:;">
+                                <img src="../img/ad6.png" alt="" />
+                            </a>
+                            <p>意见反馈</p>
+                        </li>
+                        <li>
+                            <a href="JavaScript:;">
+                                <img src="../img/ad7.png" alt="" />
+                            </a>
+                            <p>问卷调查</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+
+        <!-- footer -->
+        <footer class="footer">
+            <div class="con">
+                <div class="link">
+                    <dl>
+                        <dt>新手指南</dt>
+                        <dd>
+                            <a href="JavaScript:;">注册新用户</a>
+                        </dd>
+                        <dd>
+                            <a href="JavaScript:;">用户协议</a>
+                        </dd>
+                        <dd>
+                            <a href="JavaScript:;">找回密码</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>购物指南</dt>
+                        <dd>
+                            <a href="JavaScript:;">红包使用说明</a>
+                        </dd>
+                        <dd>
+                            <a href="JavaScript:;">购物流程</a>
+                        </dd>
+                        <dd>
+                            <a href="JavaScript:;">订单状态</a>
+                        </dd>
+                        <dd>
+                            <a href="JavaScript:;">邦购币绑定与使用</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>配送方式</dt>
+                        <dd>
+                            <a href="JavaScript:;">配送范围</a>
+                        </dd>
+                        <dd>
+                            <a href="JavaScript:;">订单拆分</a>
+                        </dd>
+                        <dd>
+                            <a href="JavaScript:;">商品验货与签收</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>支付方式</dt>
+                        <dd>
+                            <a href="JavaScript:;">发票制度</a>
+                        </dd>
+                        <dd>
+                            <a href="JavaScript:;">支付方式</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>售后服务</dt>
+                        <dd>
+                            <a href="JavaScript:;">退换货政策</a>
+                        </dd>
+                        <dd>
+                            <a href="JavaScript:;">退换货办理流程</a>
+                        </dd>
+                        <dd>
+                            <a href="JavaScript:;">退款说明</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>联系方式</dt>
+                        <dd>
+                            <a href="JavaScript:;">在线客服</a>
+                        </dd>
+                        <dd>
+                            <a href="JavaScript:;">咨询电话：4008219988</a>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="bottom">
+                    <p>
+                        CopyRight © 2000-2018, 版权所有 上海美特斯邦威服饰股份有限公司 banggo.com 
+                        <a href="JavaScript:;">
+                            沪ICP备05033127号
+                        </a>
+                        |沪ICP证B2-20150114 021-38119999
+                    </p>
+                    <p>
+                        <a href="JavaScript:;"><img src="../img/footer1.png" alt="" /></a>
+                        <a href="JavaScript:;"><img src="../img/footer2.png" alt="" /></a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+</body>
+</html>

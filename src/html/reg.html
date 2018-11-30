@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>会员注册</title>
+    <link rel="stylesheet" type="text/css" href="../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../css/reg.css" />
+    <script type="text/javascript" src="../js/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+    <script type="text/javascript" src="../js/reg.js"></script>
+</head>
+<body>
+    <div id="reg">
+        <div class="con">
+            <header>
+                <a href="#"><img src="../img/logo_reg.jpg" alt="" /></a>
+            </header>
+            <div class="top">
+                <a href="#">账号注册</a>
+            </div>
+            <div class="message">
+                <div class="message_l">
+                    <div class="hint">请填写下面的内容</div>
+                    <div class="form-group">
+                        <label for="username" class="ltext">用户名：</label>
+                        <input type="text" id="username" name="username" class="form-control">
+                        <span class="s1">4-20个字符，推荐使用中文会会员名字。</span> 
+                        <p class="help-block" id="usninf"></p>
+                    </div>
+                    <div class="form-group">
+                        <label for="password" class="ltext">登录密码：</label>
+                        <input type="password" id="password" name="password" class="form-control">
+                        <span class="s1">6-16个字符，请使用字母加符号或者数字组合密码。</span> 
+                        <span class="help-block" id="pswinf"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="password1" class="ltext">确认密码：</label>
+                        <input type="password" id="password1" name="" class="form-control">
+                        <span class="s1">请再次输入登录密码。</span> 
+                        <span class="help-block" id="pswinf1"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="yzm" class="ltext">验证码：</label>
+                        <input type="text" id="yzm" name="" class="form-control">
+                        <span class="s1" id="s1">请输入验证码。</span> 
+                        <span class="help-block" id="code"></span>
+                        <a href="javascript:;" id="next_code">换一张</a>
+                    </div>
+                    <p id="btnReg">
+                        <a class="btn-success" id="btn"></a>
+                        
+                    </p>
+                    <p id="pact">
+                        <a href="#">《邦购用户协议》</a>
+                    </p>
+                </div> 
+                <div class="message_r">
+                    <img src="../img/reg_infr.png" alt="" />
+                </div>  
+            </div>
+            <div class="bottom">
+                <div class="con">
+                    <p>
+                        <span>美特斯邦威集团网站：</span>
+                        <a href="#">美特斯邦威</a> |
+                        <a href="#">ME&CITY</a> |
+                        <a href="#">CH'IN祺</a> |
+                        <a href="#">邦购网</a> |
+                    </p>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+</body>
+</html>

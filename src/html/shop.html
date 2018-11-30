@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>购物车</title>
+    <link rel="stylesheet" type="text/css" href="../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../css/shop.css" />
+    <script type="text/javascript" src="../js/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+    <script type="text/javascript" src="../js/shop.js"></script>
+</head>
+<body>
+    <!-- 回到顶部 -->
+    <div class="new_mbshop">
+        <a href="JavaScript:;" id="toTop"></a>
+        <a href="JavaScript:;"></a>
+    </div>
+
+
+    <!-- top_reg -->
+    <header id="top_reg">
+        <div class="con">
+            <div class="reg_l fl">
+
+            </div>
+            <ul class="reg_r fr">
+                <li id="login_way">
+                    <a href="login.html">
+                        登录
+                    </a>
+                    <ul>
+                        <a href="JavaScript:;">QQ账户登录</a>
+                        <a href="JavaScript:;">支付宝登录</a>
+                        <a href="JavaScript:;">微信账户登录</a>
+                    </ul>
+                    <p></p>
+                </li>
+                <li>
+                    <a href="reg.html">
+                        注册
+                    </a>
+                </li>
+                <li id="myShop">
+                    <a href="JavaScript:;">
+                        我的邦购
+                    </a>
+                    <ul>
+                        <a href="JavaScript:;">我的订单</a>
+                        <a href="JavaScript:;">我的积分</a>
+                        <a href="JavaScript:;">我的点赞</a>
+                        <a href="JavaScript:;">收货地址</a>
+                    </ul>
+                    <p></p>    
+                </li>
+                <li>
+                    <a href="JavaScript:;">
+                        会员中心
+                    </a>
+                </li>
+                <li id="app">
+                    <a href="JavaScript:;">
+                        <i></i>
+                        下载APP
+                    </a>
+                    <ul>
+                        <img src="../img/APP.png" height="140" width="140" alt="" />
+                    </ul>
+                    <p></p> 
+                </li>
+                <li>
+                    <a href="JavaScript:;">
+                        微博
+                    </a>
+                </li>
+                <li id="wx">
+                    <a >
+                        微信
+                    </a>
+                    <img src="../img/APP.png" height="140" width="140" alt="" />
+                </li>
+                <!-- 用来处理精灵图超出部分 -->
+                <p class="cover"></p>
+            </ul>
+        </div>
+    </header>
+    
+    <!-- top_logo -->
+    <article id="top_logo">
+        <div class="con">
+            <div class="logo_l fl">
+                <a href="../text.html" style="display:inlne-block;"><img src="../img/logo.png" height="73" width="266" alt="" /></a>
+            </div>
+            <div class="logo_r fr">
+                <span></span>
+            </div>
+        </div>
+    </article>
+
+
+        
+    <!-- main -->
+    <main class="container">
+        <div class="con">
+            <div class="car_title">
+                <span>购物袋</span>
+            </div>
+            <div class="carts">
+                <ul class="car_head">
+                    <li>
+                        <input type="checkbox" class="checkAll" /><span>全选</span>
+                    </li>
+                    <li>商品信息</li>
+                    <li>颜色尺码</li>
+                    <li>单价(元)</li>
+                    <li>数量</li>
+                    <li>小计</li>
+                    <li>操作</li>
+                </ul>
+                <div class="car_c">
+                    <div class="shop_name">
+                        <p class="fl">
+                            <input type="checkbox" class="checkAll" /><span>邦购</span>
+                        </p>
+                        <p class="fr">
+                            <span>满99包邮</span>
+                        </p>
+                    </div>
+<!--                <ul class="single_goods">
+                        选中按钮
+                        <li class="single_1">
+                            <p><input type="checkbox" class="goods_checkbox" /></p>
+                        </li>
+                        商品信息
+                        <li class="single_2">
+                            <dl class="clearfix">
+                                <dt>
+                                    <a href="javascript:;"><img src="../img/goods1.jpg" alt="" /></a>
+                                </dt>
+                                <dd>
+                                    <a href="javascript:;">秋冬休闲裤男修身长裤束口小脚运动裤2018新款</a>
+                                    <p>
+                                        商品编号：<i>123456</i>
+                                    </p>
+                                </dd>
+                            </dl>
+                        </li>
+                        颜色尺码
+                        <li class="single_3">
+                            <p>颜色：<i>银灰</i></p>
+                            <p>尺码：<i>（XL）</i></p>  
+                        </li>
+                        单价
+                        <li class="single_4">
+                            <p><del>￥569</del></p>
+                            <p>￥149</p>
+                        </li>
+                        数量
+                        <li class="single_5">
+                            <a href="javascript:;" class="num_less">-</a><input type="text" value="1" class="nums" /><a href="javascript:;" class="num_add">+</a>
+                        </li>
+                        小计
+                        <li class="single_6">
+                            <i>￥0</i>
+                        </li>
+                        操作
+                        <li class="single_7">
+                            <a href="javascript:;" class="in_favorites">移入我的点赞</a>
+                            <a href="javascript:;" class="delete_goods">删除</a>
+                        </li>
+                    </ul> -->
+                </div>
+                <ul class="car_bttom">
+                    <li>
+                        <input type="checkbox" class="checkAll" /><span>全选</span>
+                    </li>
+                    <li class="balance_del">
+                        <p>删除选中商品</p>
+                    </li>
+                    <li>
+                        <p>清除失效商品</p>
+                    </li>
+                    <li class="balance_num">
+                        <p>已选商品<i>0</i>件</p>
+                    </li>
+                    <li class="balance_price">
+                        <p>商品总价<i>￥0</i> - 优惠<em>￥0</em></p>
+                    </li>
+                    <li class="balance_price">
+                        <p>合计(不含运费)：<i>￥0</i></p>
+                    </li>
+                    <li class="cartPayBill">
+                        <a href="javascript:;" class="active">去结算</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </main>
+
+
+
+    <!-- ad -->
+    <article class="ad">
+        <div class="con">
+            <ul class="ad_contact">
+                <li><a href="JavaScript:;"><img src="../img/ad1.png" alt="" /></a></li>
+                <li><a href="JavaScript:;"><img src="../img/ad2.png" alt="" /></a></li>
+                <li><a href="JavaScript:;"><img src="../img/ad3.png" alt="" /></a></li>
+            </ul>
+            <div class="ad_cpt">
+                <a href="JavaScript:;"><img src="../img/ad4.jpg" alt="" /></a>
+                <ul>
+                    <li>
+                        <a href="JavaScript:;">
+                            <img src="../img/ad5.png" alt="" />
+                        </a>
+                        <p>在线客服</p>
+                    </li>
+                    <li>
+                        <a href="JavaScript:;">
+                            <img src="../img/ad6.png" alt="" />
+                        </a>
+                        <p>意见反馈</p>
+                    </li>
+                    <li>
+                        <a href="JavaScript:;">
+                            <img src="../img/ad7.png" alt="" />
+                        </a>
+                        <p>问卷调查</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </article>
+
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="con">
+            <div class="link">
+                <dl>
+                    <dt>新手指南</dt>
+                    <dd>
+                        <a href="JavaScript:;">注册新用户</a>
+                    </dd>
+                    <dd>
+                        <a href="JavaScript:;">用户协议</a>
+                    </dd>
+                    <dd>
+                        <a href="JavaScript:;">找回密码</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>购物指南</dt>
+                    <dd>
+                        <a href="JavaScript:;">红包使用说明</a>
+                    </dd>
+                    <dd>
+                        <a href="JavaScript:;">购物流程</a>
+                    </dd>
+                    <dd>
+                        <a href="JavaScript:;">订单状态</a>
+                    </dd>
+                    <dd>
+                        <a href="JavaScript:;">邦购币绑定与使用</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>配送方式</dt>
+                    <dd>
+                        <a href="JavaScript:;">配送范围</a>
+                    </dd>
+                    <dd>
+                        <a href="JavaScript:;">订单拆分</a>
+                    </dd>
+                    <dd>
+                        <a href="JavaScript:;">商品验货与签收</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>支付方式</dt>
+                    <dd>
+                        <a href="JavaScript:;">发票制度</a>
+                    </dd>
+                    <dd>
+                        <a href="JavaScript:;">支付方式</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>售后服务</dt>
+                    <dd>
+                        <a href="JavaScript:;">退换货政策</a>
+                    </dd>
+                    <dd>
+                        <a href="JavaScript:;">退换货办理流程</a>
+                    </dd>
+                    <dd>
+                        <a href="JavaScript:;">退款说明</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>联系方式</dt>
+                    <dd>
+                        <a href="JavaScript:;">在线客服</a>
+                    </dd>
+                    <dd>
+                        <a href="JavaScript:;">咨询电话：4008219988</a>
+                    </dd>
+                </dl>
+            </div>
+            <div class="bottom">
+                <p>
+                    CopyRight © 2000-2018, 版权所有 上海美特斯邦威服饰股份有限公司 banggo.com 
+                    <a href="JavaScript:;">
+                        沪ICP备05033127号
+                    </a>
+                    |沪ICP证B2-20150114 021-38119999
+                </p>
+                <p>
+                    <a href="JavaScript:;"><img src="../img/footer1.png" alt="" /></a>
+                    <a href="JavaScript:;"><img src="../img/footer2.png" alt="" /></a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

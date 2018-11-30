@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>会员登录</title>
+    <link rel="stylesheet" type="text/css" href="../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../css/login.css" />
+    <script type="text/javascript" src="../js/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+    <script type="text/javascript" src="../js/login.js"></script>
+</head>
+<body>
+    <div id="login">
+        <div class="con">
+            <div class="LI_top">
+                <a href="#"><img src="../img/logo_reg.jpg" alt="" /></a>
+            </div>
+            <div class="LI_main">
+                <a href="#"><img src="../img/login.jpg" alt="" /></a>
+                <div class="main_r">
+                    <div class="seltab" id="jsSeltab">
+                        <h3 class="t1 active" ltn="用户名" ltw="登录密码">帐户登录</h3>
+                        <h3 class="t2" ltn="手机号" ltw="登录密码">手机登录</h3>
+                        <h3 class="t3" ltn="卡 号" ltw="卡密码">卡登录</h3>
+                    </div>
+                    <div class="formarea" id="jsFormarea">
+                        <div class="form_group">
+                            <label for="username" class="ltext" id="ipn1">用户名：</label>
+                            <input type="text" id="username" class="form_control">
+                            <p class="help_block" id="usninf">请输入用户名</p>
+                        </div>
+                        <div class="form_group">
+                            <label for="password" class="ltext" id="ipn2">登录密码：</label>
+                            <input type="password" id="password" name="password" class="form_control"> 
+                            <p class="help_block" id="pswinf">请输入密码</p>
+                        </div>
+                        <div class="form_group">
+                            <label for="yzm" class="ltext">验证码：</label>
+                            <input type="text" id="yzm" class="form_control"> 
+                            <p class="help_block" id="codeinf">请输入验证码</p>
+                            <span id="code"></span>
+                            <a href="javascript:;" id="next_code">换一张</a>
+                        </div>
+                        <div class="form_group">
+                            <input class="chek1" type="checkbox" /><span>记住用户名</span>
+                            <input class="chek2" type="checkbox" /><span>自动登录</span>
+                        </div>
+                        <div class="form_group">
+                            <a href="javascript:;" id="btn"></a>
+                            <a href="javascript:;">找回密码?</a>
+                        </div>
+                        <div class="bottom">
+                            <span class="s1">还不是邦购网用户？马上加入吧~~~</span>
+                            <a href="reg.html"><span>免费注册>></span></a>
+                        </div>
+                        <div class="login_surport">
+                            <h4>或者使用合作网站登录：</h4>
+                            <p>
+                                <a href="javascript:;">QQ</a>
+                                <a href="javascript:;">支付宝</a>
+                                <a href="javascript:;">微信</a>
+                                <a href="javascript:;"></a>
+                                <a href="javascript:;"></a>
+                                <a href="javascript:;"></a>
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="LI_bottom">
+                <p>
+                    <span>美特斯邦威集团网站：</span>
+                    <a href="#">美特斯邦威</a> |
+                    <a href="#">ME&CITY</a> |
+                    <a href="#">CH'IN祺</a> |
+                    <a href="#">邦购网</a> |
+                </p>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

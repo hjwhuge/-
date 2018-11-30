@@ -1,0 +1,127 @@
+.con{
+    width: 982px;
+    margin:0 auto;
+    font-size: 12px;
+}
+header{
+    height: 100px;
+}
+.top{
+    height: 26px;
+    border-bottom:2px solid #6E6E6E;
+    a{
+        display:block;
+        color:#fff;
+        width: 160px;
+        height: 26px;
+        font-size:15px;
+        line-height: 26px;
+        text-align:center;
+        background: url(../img/reg_jn.png) 0 -450px;
+    }
+    margin-bottom:8px;
+}
+
+.message{
+    width: 980px;
+    height: 426px;
+    border:1px solid #CCCCCC;
+    .message_r{
+        float:right;
+    }
+    .message_l{
+        float:left;
+        margin-left:31px;
+        width: 700px;
+        .hint{
+            width: 700px;
+            height: 30px;
+            line-height: 30px;
+            padding-top:20px;
+            margin-bottom:25px;
+            border-bottom: 1px dotted #E6E6E6;
+            font-size:14px;
+            color:#333333;
+        }
+        .form-group{
+            width: 700px;
+            height: 60px;
+            position:relative;
+            .ltext{
+            display:inline-block;
+            width: 100px;
+            height: 30px;
+            text-align:right;
+            line-height: 30px;
+            
+            }
+            .form-control{
+                width: 245px;
+                height: 28px;
+                border:1px solid #ABABAB;
+                margin-right:3px;
+            }
+            .s1{
+                font-size:12px;
+                color:#999999;
+            }
+            .help-block{
+                position:absolute;
+                top:37px;
+                left:125px;
+            }
+        }
+        
+    }
+    
+}
+.message_l #btnReg{
+    width: 700px;
+    height: 40px;
+    #btn{
+        display:block;
+        width: 213px;
+        height: 35px;
+        margin-left:100px;
+        background: url(../img/reg_jn1.png) no-repeat 0 -84px;
+        cursor:pointer;
+        margin-top:14px;
+    }
+}
+.message_l #code{
+  border:1px solid #ccc;
+  width: 46px;          
+  height: 24px;
+  line-height: 24px;
+  opacity:0.8;
+  text-align: center;
+  cursor: pointer;
+  padding:0 4px;
+  font-style: italic;
+  background: #ccc;
+  -moz-user-select:none;
+  -webkit-user-select:none;
+  letter-spacing:4px;
+  text-shadow:2px 1px;
+}
+.message_l #next_code{
+    position:absolute;
+    top:39px;
+    left:186px;
+    color:#333;
+}
+.message_l #pact{
+    margin-top:6px;
+    margin-left:100px;
+    a{
+        color:#333333;
+    }
+}
+.bottom p{
+    padding-top:24px;
+    text-align:center;
+    color:#333333;
+    a{
+        color:#333333;
+    }
+}
